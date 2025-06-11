@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Evet Hayır Sitesi</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background-image: url('arkaplan.jpg'); /* */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: sans-serif;
+    }
+
+    h1 {
+      color: white;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 15px 30px;
+      margin: 10px;
+      font-size: 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+    }
+
+    .yes {
+      background-color: green;
+      color: white;
+    }
+
+    .no {
+      background-color: red;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Bir seçim yap!</h1>
+  <div class="buttons">
+    <button class="yes" onclick="playVideo()">Evet</button>
+    <button class="no" onclick="alert('Belki sonra 😄')">Hayır</button>
+  </div>
+
+  <script>
+    function playVideo() {
+      window.open("https://www.youtube.com/watch?v=aRCG4Ccthz8", "_blank");
+    }
+  </script>
+
+</body>
+</html>
