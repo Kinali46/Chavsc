@@ -7,33 +7,50 @@
     body {
       margin: 0;
       height: 100vh;
-      background-image: url('arkaplan.jpg'); /* */
+      background-image: url(''); /* Görsel URL'si buraya */
       background-size: cover;
       background-position: center;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
       font-family: sans-serif;
     }
 
+    .container {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+      text-align: center;
+      backdrop-filter: blur(6px);
+    }
+
     h1 {
+      color: rgb(255, 255, 255);
+       text-shadow: 5px 4px 4px #000000;
+    }
+       h2 {    
+      color: rgb(255, 255, 255);
+      text-shadow: 20px 20px 20px #000000;
+    }
+   h3 {
       color: white;
-      text-shadow: 2px 2px 4px #000;
+      text-shadow: 20px 20px 20px #000000;
     }
 
     .buttons {
-      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
     }
 
     button {
       padding: 15px 30px;
-      margin: 10px;
       font-size: 20px;
       border: none;
-      border-radius: 10px;
+      border-radius: 12px;
       cursor: pointer;
-      transition: transform 0.2s;
+      transition: transform 0.2s, background-color 0.3s;
     }
 
     button:hover {
@@ -41,27 +58,31 @@
     }
 
     .yes {
-      background-color: green;
+      background-color: #4CAF50;
       color: white;
     }
 
     .no {
-      background-color: red;
+      background-color: #F44336;
       color: white;
     }
   </style>
 </head>
 <body>
 
-  <h1>Bir seçim yap!</h1>
-  <div class="buttons">
-    <button class="yes" onclick="playVideo()">Evet</button>
-    <button class="no" onclick="alert('Belki sonra 😄')">Hayır</button>
+  <div class="container">
+    <h2>Chvasc sen herzaman iyi dostun </h2>
+    <h2> Seni her zaman seveceğim lan 😄 </h2>
+    <h1>Chavsc bir seçim yap Dostum!</h1>
+    <div class="buttons">
+      <button class="yes" onclick="playVideo()">Evet</button>
+      <button class="no" onclick="alert('Chvasc Piçlik yapma evete bas 😄')">Hayır</button>
+    </div>
   </div>
 
   <script>
     function playVideo() {
-      window.open("https://www.youtube.com/watch?v=aRCG4Ccthz8", "_blank");
+      window.open("https://www.youtube.com/watch?v=mwjs25xrEI0", "_blank");
     }
   </script>
 
